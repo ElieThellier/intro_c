@@ -7,8 +7,9 @@ void print_tableau(int tab[],int len){
     printf("\n");
 }
 
-int main(int n){
+int main(){
     printf("Afficher les entiers pairs jusqu'à ?\n");
+    int n;
     scanf("%d",&n);
     n=n/2;
     int tab[n];
@@ -17,6 +18,6 @@ int main(int n){
         tab[j]=i;
         j=j+1;
     }
-    print_tableau(tab,n+1);
+    print_tableau(tab,j);
     return 1;
 }
