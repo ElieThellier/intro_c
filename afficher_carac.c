@@ -5,5 +5,5 @@ int main(){
     char mot[50];
     scanf("%[^\n]",mot);
     printf("%s\n",mot);
-    return 0;
+    return 1;
 }
