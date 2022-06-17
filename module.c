@@ -6,4 +6,5 @@ int addone(int x){
 int main(){
     int ans = addone(1);
     printf("%d\n",ans);
+    return 0;
 }
