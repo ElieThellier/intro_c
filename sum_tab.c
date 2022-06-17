@@ -5,5 +5,5 @@ int main(int t[],int u[], int len){
     for (int i=0;i<len;i=i+1){
         res[i]=t[i]+u[i];
     }
-    return 0;
+    return 1;
 }
