@@ -18,5 +18,5 @@ int main(int n){
         j=j+1;
     }
     print_tableau(tab,n+1);
-    return 0;
+    return 1;
 }

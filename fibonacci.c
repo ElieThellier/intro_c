@@ -14,6 +14,6 @@ int main(int n){
     printf("Entrez l'indice du nombre de la suite de Fibonacci voulu :");
     scanf("%d",&n);
     printf("Le %d-ème nombre de la suite de Fibonacci est %d\n",n , fibo(n));
-    return 0;
+    return 1;
 }
 
