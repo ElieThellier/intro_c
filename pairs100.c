@@ -2,12 +2,13 @@
 
 void print_tableau(int tab[],int len){
     for (int i=0; i<len; i++){
-        printf("%d\n", tab[i]);
+        printf("%d ", tab[i]);
     }
+    printf("\n");
 }
 
 int main(int n){
-    printf("Afficher les entiers pairs jusqu'à ?");
+    printf("Afficher les entiers pairs jusqu'à ?\n");
     scanf("%d",&n);
     n=n/2;
     int tab[n];
