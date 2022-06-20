@@ -23,11 +23,11 @@ int compare_chaine(char s[], char t[]){
         printf("'%s' et '%s' font la même taile\n",s,t);
         return 0;
     }
-    if (compter(s)<compter(t)){
+    else if (compter(s)<compter(t)){
         printf("'%s' est plus petite que '%s'\n",s,t);
         return -1;
     }
-    if (compter(s)>compter(t)){
+    else if (compter(s)>compter(t)){
         printf("'%s' est plus grande que '%s'\n",s,t);
         return 1;
     }
