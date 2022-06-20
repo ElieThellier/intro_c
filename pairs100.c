@@ -1,11 +1,5 @@
 #include <stdio.h>
-
-void print_tableau(int tab[],int len){
-    for (int i=0; i<len; i++){
-        printf("%d ", tab[i]);
-    }
-    printf("\n");
-}
+#include "pairs100.h"
 
 int main(){
     printf("Afficher les entiers pairs jusqu'à ?\n");
@@ -19,5 +13,12 @@ int main(){
         j=j+1;
     }
     print_tableau(tab,j);
-    return 1;
+    return 0;
+}
+
+void print_tableau(int tab[],int len){
+    for (int i=0; i<len; i++){
+        printf("%d ", tab[i]);
+    }
+    printf("\n");
 }

@@ -1,0 +1,1 @@
+void print_tableau(int tab[],int len);
