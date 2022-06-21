@@ -49,3 +49,7 @@ int ispalindrome(char s[]){
     return 1;
     }
 }
+
+int nbrede1enbinaire(int nbre){
+    return 0;
+}
