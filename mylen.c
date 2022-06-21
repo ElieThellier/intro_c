@@ -11,7 +11,7 @@ int main(){
     int comparaison1 = compare_chaine("pareil", "egales");
     int comparaison2 = compare_chaine("pomme", "tomate");
     int comparaison3 = compare_chaine("rien", "");
-
+    
     int palin1 = ispalindrome("pomme");
     int palin2 = ispalindrome("kayak");
     return 0;
@@ -38,19 +38,14 @@ int compare_chaine(char s[], char t[]){
 }
 
 int ispalindrome(char s[]){
-    if (compare_chaine(s,s) != 0){
-        printf("'%s' n'est pas un palindrome\n", s);
-        return 0;
-    }
-    else{
-        int i,j;
-        for (i=0,j=strlen(s)-1;i>j;i++,j--){
-            if (s[i]!=s[j]){
-                printf("'%s' n'est pas un palindrome\n", s);
-                return 0;
-            }
-        printf("'%s' est un palindrome\n", s);
-        return 1;
+    int i=0;
+    int len=strlen(s);
+    for (i=0;i<len/2;i++){
+        if (s[i]!=s[len-i-1]){
+            printf("'%s' n'est pas un palindrome\n", s);
+            return 0;
         }
+    printf("'%s' est un palindrome\n", s);
+    return 1;
     }
 }
